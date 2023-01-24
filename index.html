@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Survey</title>
+</head>
+<body>
+    <!-- <h1>SoftWare Engineers Survey </h1> -->
+<div class="container">
+   <form action="">
+        <div class="fields">
+            <label class="labels" for="">Name</label>
+            <input type="text" class="inputs" placeholder="Enter Your Name"> 
+            <!-- <i class="fa-solid fa-image-portrait"></i> -->
+
+        </div>
+        <div class="fields">
+            <label class="labels" for="">Email</label>
+            <input type="email" class="inputs" placeholder="Enter Your Email"> 
+            <!-- <i class="fa-solid fa-envelope"></i> -->
+        </div>
+        <div class="fields">
+            <label class="labels" for="">Age</label>
+            <input type="number" class="inputs" placeholder="Enter Your Age"> 
+            <!-- <i class="fas fa-child"></i> -->
+        </div>
+        <div class="fields">
+        
+    <label class="labels" for="">Which type You Are ?</label>
+    <select name="" id="" class="inputs select">
+       <option value="Student">Student</option> 
+
+       <option value="Fresh Graduate">Fresh Graduate</option> 
+       <option value="Junior">Junior</option> 
+       <option value="Senior">Senior</option> 
+        </select>
+        </div>
+         <div class="fields">
+            <label for="" class="labels">What Language You Use ?</label>
+           <input type="checkbox" value="php" name="fav" class="radio"><label class="check-label" for="php" >PHP</label><br>
+           <input type="checkbox" value="js" name="fav" class="radio"><label  class="check-label"  for="js">JavaScript</label><br>
+           <input type="checkbox" value="cpp" name="fav" class="radio"><label  class="check-label"  for="cpp">C++</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >C#</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >C</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >Swift</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >Cotlen</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >Dart</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >Golang</label><br>
+           <input type="checkbox" value="java" name="fav" class="radio"><label  class="check-label" for="java" >Other</label><br>
+         </div>
+         <div class="fields">
+            <label for="" class="labels">You Works ?</label>
+           <input type="radio" value="php" name="fav" class="radio"><label class="check-label" for="php" >Online</label><br>
+           <input type="radio" value="js" name="fav" class="radio"><label  class="check-label"  for="js">Offline</label><br>
+           <input type="radio" value="cpp" name="fav" class="radio"><label  class="check-label"  for="cpp">Hybrid</label><br>
+
+         </div>
+         <div class="fields">
+            <label for="" class="labels">Your salary</label>
+               <span class="usd">$</span><span id="rangeValue">0</span>
+            <Input class="range" type="range"  value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+        </div>
+        <input type="submit" class="submit" name="" id="">
+       
+
+      
+    
+    </form>
+
+</div>
+
+
+<script type="text/javascript">
+    function rangeSlide(value) {
+        document.getElementById('rangeValue').innerHTML = value;
+    }
+</script>
+</body>
+
+</html>
